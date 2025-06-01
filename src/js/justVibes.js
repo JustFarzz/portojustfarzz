@@ -12,7 +12,7 @@ const photos = [
     { id: 10, src: "../images/my_Vibes/IMG_0105.jpg", title: "Paralayang Golden Sunrise", location: "Batu, Indonesia" },
     { id: 11, src: "../images/my_Vibes/IMG_0106.jpg", title: "Pagi di UNMER Malang", location: "Malang, Indonesia" },
     { id: 12, src: "../images/my_Vibes/IMG_0108.jpg", title: "Paralayang", location: "Batu, Indonesia" },
-    { id: 13, src: "../images/my_Vibes/IMG_0109.jpg", title: "Paralayang Batu", location: "Batu, Indonesia" }
+    { id: 13, src: "../images/my_Vibes/IMG_0109.JPG", title: "Paralayang Batu", location: "Batu, Indonesia" }
 ];
 
 //========== [GALLERY] ==========//
