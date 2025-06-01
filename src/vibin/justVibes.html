@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Memories</title>
+
+    <link rel="icon" href="../images/justfarzz.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/justVibes.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <button class="back-button" onclick="window.history.back()">← Kembali</button>
+
+            <header class="header">
+                <h1 class="main-title">Music & Memories</h1>
+                <p class="subtitle">Explore my playlists and captured moments</p>
+            </header>
+
+            <!-- Playlist Section -->
+            <section class="playlists-section">
+                <h2 class="section-title">My Playlists</h2>
+                <div class="playlists-grid">
+                    <div class="playlist-card">
+                        <h3 class="playlist-title">Main Playlist</h3>
+                        <div class="spotify-embed">
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/3CuGoWtGOhy7zix7S2GBal?utm_source=generator"
+                                width="100%" height="352" frameborder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy" title="Spotify Playlist 1">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="playlist-card">
+                        <h3 class="playlist-title">Secondary Mix</h3>
+                        <div class="spotify-embed">
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/7z0QyCkCYJ0AVgkKasm2Yz?utm_source=generator"
+                                width="100%" height="352" frameborder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy" title="Spotify Playlist 2">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="gallery-section">
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Photos will be dynamically loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Photo Popup -->
+        <div class="photo-popup" id="photo-popup">
+            <div class="photo-popup-content">
+                <button class="photo-popup-close" onclick="closePhotoPopup()" aria-label="Close popup">×</button>
+                <img src="" alt="" class="photo-popup-image" id="popup-image">
+                <div class="photo-popup-info">
+                    <h3 class="photo-popup-title" id="popup-title"></h3>
+                    <p class="photo-popup-location" id="popup-location"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/justVibes.js"></script>
+</body>
+
+</html>

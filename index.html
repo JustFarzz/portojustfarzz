@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porto Farzz - Fullstack Developer</title>
+
+    <link rel="icon" href="src/images/justfarzz.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <button class="logoButton" onclick="closeMenu()">
+                <a class="logo" href="#hero">Porto Farzz</a>
+            </button>
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <div class="overlay" onclick="closeMenu()"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-logo fade-up">
+            <img draggable="false" class="justlogo tilt-effect"
+                src="src/images/Hero.jpg" alt="Just Farzz Logo" />
+        </div>
+        <div class="hero-title fade-up">
+            <h2 class="titleHero">Just Farzz</h2>
+        </div>
+        <div class="hero-subtitle fade-up">
+            <p class="pHero">Fullstack Developer</p>
+        </div>
+        <div class="hero-button fade-up">
+            <button class="buttonProject">
+                <a href="#projects"><i class="fas fa-folder"></i> My Projects</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="layout-container">
+            <div class="image-container fade-right">
+                <img draggable="false" class="imgAbout tilt-effect"
+                    src="src/images/img2.JPG"
+                    alt="Bromo by (JustFarzz)" />
+                <button class="vibes-button" onclick="handleVibesClick()">🔥 My Vibes</button>
+            </div>
+            <div class="text-container">
+                <h1 class="titleAbout fade-up"><span><i class="fas fa-user"></i> About</span> Me</h1>
+                <h2 class="titleAbout2 fade-left">Full Stack Developer</h2>
+                <p class="pAbout fade-up">
+                    Halo! Saya adalah Faris Firmansyah, saya mahasiswa S1 Sistem Informasi di Universitas Merdeka
+                    Malang...
+                </p>
+                <p class="pAbout2 fade-up">"Simplicity is the soul of efficiency. - Austin Freeman"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-content">
+            <div class="text-container fade-up">
+                <h1 class="titleProjects"><span><i class="fas fa-folder"></i> My </span> Projects</h1>
+            </div>
+            <div class="project-swiper-container" id="projectSwiper">
+                <div class="motion-container">
+                    <!-- Project cards injected by JS -->
+                </div>
+                <div class="dot-indicators" id="dotIndicators"></div>
+                <div class="github-button-container fade-up">
+                    <a href="https://github.com/justfarzz" target="_blank" rel="noopener noreferrer" class="btn-github">
+                        <span class="github-icon">⭐</span> Visit My GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h1 class="skills-title fade-up"><span><i class="fas fa-gear"></i> My</span> Skills</h1>
+        <div class="skills-grid" id="skillsGrid">
+            <!-- Injected by JS -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="text-container fade-up">
+            <h1 class="contact-title"><span><i class="fas fa-address-book"></i> Contact</span> Me</h1>
+            <p class="contact-subtitle">Let's connect and work together!</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info fade-left">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-details">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:justafrzzdev@gmail.com">justafrzzdev@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-details">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+622132201580">+62 821-3220-1580</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-details">
+                        <span class="contact-label">Location</span>
+                        <span>Malang, East Java, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media fade-right">
+                <h3 class="social-title">Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/faris-firmansyah-justfarzz" class="social-link linkedin"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-globe"></i><span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/justfarzz" class="social-link github" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-code"></i><span>GitHub</span>
+                    </a>
+                    <a href="https://instagram.com/faris.frm" class="social-link instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-camera"></i><span>Instagram</span>
+                    </a>
+                    <a href="https://twitter.com/justfarzz" class="social-link twitter" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-share"></i><span>Twitter</span>
+                    </a>
+                    <a href="https://wa.me/6282132201580" class="social-link whatsapp" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-comment"></i><span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
